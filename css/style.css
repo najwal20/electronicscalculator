@@ -1,0 +1,98 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+h1 {
+    color: #29b6f6; /* Warna teal accent-4 dari Materialize CSS */
+    margin-bottom: 30px;
+    font-size: 4em;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #250101;
+}
+
+select {
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 1em; /* Atur ukuran font pada elemen <option> */
+}
+
+
+input, select, button {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+button {
+    padding: 15px 25px;
+    background-color: #29b6f6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+span {
+    font-weight: bold;
+    color: #29b6f6;
+}
+
+
+table {
+    border: 2px solid white;
+    border-collapse: collapse;
+    background-color: #f7ab08;
+    width: 80%;
+    margin-top: 0px;
+    margin: 0 auto;
+    
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 30px;
+    text-align: center;
+}
+
+th {
+    background-color: #29b6f6;
+    color: black;
+    text-align: center;
+}
+
+#buttonContainer {
+    margin-top: 30px;
+    text-align: center; /* Menengahkan container tombol */
+}
+
+#calculateButton, #resetButton {
+    background-color: #29b6f6;
+    color: #250101;
+    padding: 15px;
+    cursor: pointer;
+    margin-right: 15px; /* Memberikan jarak antara tombol */
+}
+
+#resetButton {
+    margin-right: 0; /* Menghapus jarak di sebelah kanan tombol Reset */
+}
+
+#calculateButton:hover, #resetButton:hover {
+    background-color: #000080;
+}
+

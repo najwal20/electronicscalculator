@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Calculator</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div id="container" class="scroll-container">
+    <h1>Electronic Calculator</h1>
+
+    <table id="inputTable">
+        <tbody>
+            <tr>
+                <td>
+                    <label for="operation">Pilih operasi:</label>
+                
+                    <select id="operation" onchange="showCalculator()">
+                        <option value="ohm">Hukum Ohm</option>
+                        <option value="kirchoff">Hukum Kirchoff</option>
+                        <option value="power">Rumus Daya</option>
+                        <option value="resistorSeries">Resistor (Seri)</option>
+                        <option value="resistorParallel">Resistor (Paralel)</option>
+                        <option value="capacitor">Kapasitor</option>
+                        <option value="inductor">Induktor</option>
+                        <option value="capacitorParallel">Kapasitor (Paralel)</option>
+                        <option value="inductorParallel">Induktor (Paralel)</option>
+                        <option value="wheatstone">Jembatan Wheatstone</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="calculatorContainer">
+                    </div>
+                    <div id="buttonContainer">
+                        <button id="resetButton" type="button" onclick="resetCalculator()">Reset</button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+
+    
+   
+<script src="js/script.js"></script>
+</body>
+</html>
